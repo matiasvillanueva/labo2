@@ -1,0 +1,14 @@
+[12:29:19] FINAL | tabular cuantil tau=0.35 + residual imagen (cap=0.08, alpha=1.0) | 5 seeds
+[12:29:20] Train: 11,840 | Test: 5,038 | Template: 5,038
+[12:30:35] Diagnostico train (in-sample): R2 0.7765 | MAE $89,636
+[12:30:35] Test: ajuste imagen medio 2.35% | gate activo 2,116/5,038
+[12:30:35] Guardado submissions/submission.csv (5,038 filas)
+count    5.038000e+03
+mean     5.176396e+05
+std      2.843218e+05
+min      8.033334e+04
+25%      3.098641e+05
+50%      4.548594e+05
+75%      6.787587e+05
+max      1.650168e+06
+Name: predicted_price, dtype: float64

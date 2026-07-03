@@ -1,0 +1,12 @@
+name: labo2
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - jupyter
+  - notebook
+  - ipykernel
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn

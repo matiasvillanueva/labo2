@@ -1,0 +1,6 @@
+{
+  "method": "sparse_shrink",
+  "alpha": 1.0,
+  "center": 13.03280030257245,
+  "n_risk_train": 6694
+}

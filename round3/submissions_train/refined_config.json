@@ -1,0 +1,11 @@
+{
+  "tau": 0.35,
+  "cap": 0.08,
+  "alpha": 1.0,
+  "roi_tabular": 1.6928048907518751,
+  "roi_refined": 1.8133079400732919,
+  "win_tabular": 81.0,
+  "win_refined": 82.5,
+  "wmape_tabular": 21.261555996187546,
+  "wmape_refined": 21.017424599030125
+}
