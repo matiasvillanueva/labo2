@@ -1,0 +1,34 @@
+{
+  "seeds": [
+    42,
+    99,
+    123
+  ],
+  "n_folds": 5,
+  "lgbm_params": {
+    "n_estimators": 900,
+    "learning_rate": 0.025,
+    "num_leaves": 31,
+    "min_child_samples": 30,
+    "subsample": 0.85,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.7,
+    "reg_alpha": 1.8,
+    "reg_lambda": 3.5,
+    "objective": "huber",
+    "alpha": 0.9
+  },
+  "provider": "openai",
+  "embedding_model": "text-embedding-3-small",
+  "llm_model": "gpt-4.1-nano",
+  "cache_tag": "",
+  "metrics": {
+    "mae": 167425.65511355613,
+    "wmape": 29.949884820367018,
+    "medape": 23.717226812541046,
+    "r2_log": 0.5549499590095692,
+    "tfidf_svd_explained_variance_mean": 0.5981944215071302,
+    "llm_emb_svd_explained_variance_mean": 0.8629786292711894,
+    "n_features_mean": 529.0
+  }
+}
