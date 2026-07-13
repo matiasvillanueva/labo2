@@ -4,7 +4,7 @@ Modelo equivalente a `round2` en formato, pero usando solamente la columna
 `description`. El modelo final usa:
 
 1. `features_text.py`: `TF-IDF` sobre texto crudo + `TruncatedSVD`.
-2. `features_llm.py`: embeddings semanticos + flags estructurados del LLM.
+2. `features_llm.py`: embeddings semanticos + flags estructurados del LLM, incluyendo indicios de casas baratas.
 3. `features_text_llm.py`: concatena `TF-IDF + embeddings + flags`.
 4. `train_oof.py`: OOF , ajustando SVD/vectorizadores dentro de cada fold.
 5. `predict_test.py`: fit full sobre train y submission de test.

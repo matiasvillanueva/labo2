@@ -1,0 +1,27 @@
+[10:01:57] Round5 COMBINA tabular+imagen (round3) + texto/LLM (round4) | 3 seeds x 5 folds
+[10:02:10] Propiedades: 11,840 | imagen scalars: 33 cols
+[10:02:10] Estrategia A: fusion por columnas (tabular+imagen+texto/LLM)
+[10:10:19]   [fusion] seed 42: MAE $126,549 | 619 cols (489s)
+[10:20:39]   [fusion] seed 99: MAE $127,097 | 619 cols (620s)
+[10:27:22]   [fusion] seed 123: MAE $126,582 | 619 cols (403s)
+[10:27:23] Estrategia B: texto/LLM como residual acotado sobre round3
+[10:30:23]   [residual] seed 42: |res| medio 0.0693 (180s)
+[10:34:01]   [residual] seed 99: |res| medio 0.0690 (218s)
+[10:37:46]   [residual] seed 123: |res| medio 0.0704 (224s)
+[10:37:49] ========================================================================================
+[10:37:49] round3         MAE $   117,491 | wMAPE  21.02% | R2(log) 0.7481 | ROI +1.85% (win 83%, %malas 47)
+[10:37:49] feature_fusion MAE $   126,135 | wMAPE  22.56% | R2(log) 0.7278 | ROI +1.27% (win 74%, %malas 49)
+[10:37:49] text_residual  MAE $   117,491 | wMAPE  21.02% | R2(log) 0.7481 | ROI +1.85% (win 83%, %malas 47)
+[10:37:49] ========================================================================================
+[10:37:49] GANADOR: text_residual | ROI +1.85% vs round3 +1.85% | wMAPE 21.02% vs 21.02%
+[10:37:49] Guardado practice_submission.csv + comparison_oof.csv + diff_vs_round3.csv + round5_config.json
+[10:37:49] vs round3: 788/11,840 propiedades con menor error | diff medio $-0 | |diff| medio $0
+count    1.184000e+04
+mean     5.145981e+05
+std      2.847489e+05
+min      7.879889e+04
+25%      3.077170e+05
+50%      4.508161e+05
+75%      6.577167e+05
+max      1.563261e+06
+dtype: float64

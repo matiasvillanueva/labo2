@@ -1,0 +1,72 @@
+{
+  "strategy": "text_residual",
+  "seeds": [
+    42,
+    99,
+    123
+  ],
+  "n_folds": 5,
+  "tau": 0.35,
+  "residual_alpha": 0.0,
+  "residual_cap": 0.03,
+  "tabular_params": {
+    "n_estimators": 1500,
+    "learning_rate": 0.015,
+    "num_leaves": 47,
+    "min_child_samples": 35,
+    "colsample_bytree": 0.4,
+    "reg_alpha": 1.5,
+    "reg_lambda": 3.5
+  },
+  "text_params": {
+    "n_estimators": 900,
+    "learning_rate": 0.025,
+    "num_leaves": 31,
+    "min_child_samples": 30,
+    "subsample": 0.85,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.7,
+    "reg_alpha": 1.8,
+    "reg_lambda": 3.5,
+    "objective": "huber",
+    "alpha": 0.9
+  },
+  "llm_kwargs": {
+    "provider": "openai",
+    "embedding_model": "text-embedding-3-small",
+    "llm_model": "gpt-4.1-nano",
+    "cache_tag": ""
+  },
+  "metrics": {
+    "round3": {
+      "name": "round3",
+      "mae": 117491.47295215767,
+      "wmape": 21.017424599030125,
+      "r2_log": 0.7481270682716816,
+      "roi_mean": 1.848832474228164,
+      "win_pos": 82.66666666666667,
+      "trap_rate": 46.820620480522514
+    },
+    "feature_fusion": {
+      "name": "feature_fusion",
+      "mae": 126135.0628652815,
+      "wmape": 22.56363041890262,
+      "r2_log": 0.7277680398404581,
+      "roi_mean": 1.2735051450992394,
+      "win_pos": 73.66666666666667,
+      "trap_rate": 48.71637066994901
+    },
+    "text_residual": {
+      "name": "text_residual",
+      "mae": 117491.47295215767,
+      "wmape": 21.017424599030125,
+      "r2_log": 0.7481270682716816,
+      "roi_mean": 1.848832474228164,
+      "win_pos": 82.66666666666667,
+      "trap_rate": 46.820620480522514,
+      "alpha": 0.0,
+      "cap": 0.03
+    }
+  },
+  "res_oof_abs_mean": 0.06202632117837186
+}

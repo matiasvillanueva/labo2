@@ -1,0 +1,14 @@
+[10:56:53] Round5 test | estrategia=text_residual | Train 11,840 | Test 5,038 | Template 5,038
+[10:56:53] Residual texto/LLM sobre round3 | alpha=0.0 cap=0.03
+[10:56:53]   [residual] alpha=0: round5 == round3 (texto/LLM no mejora en OOF)
+[10:56:53] Guardado submissions/submission.csv (5,038 filas)
+[10:56:53] vs round3 (test): diff medio $0 | |diff| medio $0 | |diff%| medio 0.00%
+count    5.038000e+03
+mean     5.176396e+05
+std      2.843218e+05
+min      8.033334e+04
+25%      3.098641e+05
+50%      4.548594e+05
+75%      6.787587e+05
+max      1.650168e+06
+Name: predicted_price, dtype: float64
