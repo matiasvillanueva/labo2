@@ -1,0 +1,14 @@
+[12:27:56] FINAL round6 | base tau=0.35 + edge t=0.25 a=0.5 | imagen cap=0.08 | 3 seeds | 69 feats
+[12:28:01] Train: 11,840 | Test: 5,038 | Template: 5,038
+[12:29:09] Diagnostico train (in-sample): R2 0.7769 | MAE $89,568
+[12:29:09] Test: gate imagen 2,116/5,038 | edge afecta 1,281/5,038 | recorte medio 1.66%
+[12:29:09] Guardado submissions/submission.csv (5,038 filas)
+count    5.038000e+03
+mean     5.105448e+05
+std      2.830206e+05
+min      7.084035e+04
+25%      3.012554e+05
+50%      4.500652e+05
+75%      6.683222e+05
+max      1.589904e+06
+Name: predicted_price, dtype: float64

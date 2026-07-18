@@ -1,0 +1,27 @@
+[12:24:49] Round6 EDGE | base tau=0.35 + residual imagen cap=0.08 | 3 seeds x 5 folds | 69 features
+[12:25:03] Propiedades: 11,840 | gate imagen activo: 4,922
+[12:25:44]   base seed 42: MAE $119,869 (42s)
+[12:26:29]   base seed 99: MAE $119,944 (44s)
+[12:27:14]   base seed 123: MAE $119,216 (45s)
+[12:27:23] Cross-fitting edge risk + severidad ...
+[12:27:46] Trap teorica (> 1.153x true): 20.3%
+[12:27:54] ========================================================================================================
+[12:27:54] base_precisa            MAE $  117,636 | wMAPE 21.04% | ROI +1.74% (win 80%, traps 47.1%) | Q1 MAPE  49.7%
+[12:27:54] edge_t0.25_a0.50        MAE $  118,790 | wMAPE 21.25% | ROI +1.93% (win 85%, traps 46.4%) | Q1 MAPE  47.5%
+[12:27:54] edge_t0.30_a0.75        MAE $  118,770 | wMAPE 21.25% | ROI +1.89% (win 85%, traps 46.6%) | Q1 MAPE  47.7%
+[12:27:54] edge_t0.35_a1.00        MAE $  118,532 | wMAPE 21.20% | ROI +1.88% (win 84%, traps 46.7%) | Q1 MAPE  48.1%
+[12:27:54] edge_t0.15_a0.25        MAE $  118,982 | wMAPE 21.28% | ROI +1.87% (win 84%, traps 46.8%) | Q1 MAPE  47.7%
+[12:27:54] edge_t0.30_a0.50        MAE $  118,230 | wMAPE 21.15% | ROI +1.85% (win 85%, traps 46.7%) | Q1 MAPE  48.3%
+[12:27:54] edge_t0.40_a1.00        MAE $  118,068 | wMAPE 21.12% | ROI +1.85% (win 82%, traps 46.8%) | Q1 MAPE  48.7%
+[12:27:54] edge_t0.20_a0.25        MAE $  118,450 | wMAPE 21.19% | ROI +1.85% (win 84%, traps 46.8%) | Q1 MAPE  48.1%
+[12:27:54] edge_t0.35_a0.75        MAE $  118,188 | wMAPE 21.14% | ROI +1.84% (win 83%, traps 46.7%) | Q1 MAPE  48.3%
+[12:27:54] GANADOR EDGE            MAE $  118,790 | wMAPE 21.25% | ROI +1.93% (win 85%, traps 46.4%) | Q1 MAPE  47.5%
+[12:27:54] wMAPE permitido <= 21.29% | afectadas 24.4% | recorte medio 1.60%
+[12:27:54] ========================================================================================================
+[12:27:54] Q1: MAPE 49.7% -> 47.5% | over 65.2% -> 62.2%
+[12:27:54] Q2: MAPE 19.4% -> 19.5% | over 49.8% -> 46.4%
+[12:27:54] Q3: MAPE 16.1% -> 16.3% | over 37.7% -> 35.9%
+[12:27:54] Q4: MAPE 17.5% -> 17.6% | over 33.0% -> 31.1%
+[12:27:54] Q5: MAPE 21.9% -> 22.4% | over 20.8% -> 19.2%
+[12:27:55] Guardado practice + comparison + oof_tabular + oof_edge + config
+[12:27:55] Edge mejora error en 1,209/11,840 props
